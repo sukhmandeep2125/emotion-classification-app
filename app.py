@@ -18,7 +18,7 @@ class Attention(tf.keras.layers.Layer):
 
 # 👇 Load the trained model
 model = load_model(
-    "emotion_gru_attention_model.h5",
+    "best_gru_attention_model.h5",
     custom_objects={"GRU": GRU, "Bidirectional": Bidirectional, "Attention": Attention},
     compile=False
 )
